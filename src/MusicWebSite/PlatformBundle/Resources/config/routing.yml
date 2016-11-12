@@ -1,0 +1,29 @@
+# src/MusicWebSitePlatformBundle/PlatformBundle/Resources/config/routing.yml
+
+music_platform_home:
+    path:      /{page}
+    defaults:   {_controller: MusicWebSitePlatformBundle:Advert:index,page:    1}
+    requirements:
+        page: \d*
+
+music_platform_view:
+    path:      /advert/{id}
+    defaults:  { _controller: MusicWebSitePlatformBundle:Advert:view }
+    requirements:	
+        id: \d+
+
+music_platform_add:
+    path:      /add
+    defaults:   {_controller: MusicWebSitePlatformBundle:Advert:add} 
+
+music_platform_edit:
+    path:          /edit/{id}
+    defaults:   {_controller: MusicWebSitePlatformBundle:Advert:edit}
+    requirements:
+        id: \d+	
+
+music_platform_delete:
+    path:         /delete/{id}
+    defaults:   {_controller: MusicWebSitePlatformBundle:Advert:delete}
+    requirements:
+        id: \d+

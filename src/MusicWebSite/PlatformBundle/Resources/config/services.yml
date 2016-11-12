@@ -1,0 +1,7 @@
+services:
+    mw_platform.antispam:
+        class: MusicWebSite\PlatformBundle\AntiSpam\MWAntiSpam
+        arguments:
+            - "@mailer"
+            - %locale%
+            - 50

@@ -1,0 +1,3 @@
+music_web_site_platform:
+    resource: "@MusicWebSitePlatformBundle/Resources/config/routing.yml"
+    prefix:   /platform

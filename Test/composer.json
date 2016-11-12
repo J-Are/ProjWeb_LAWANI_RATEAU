@@ -1,0 +1,10 @@
+{
+  "require": {
+     "php": ">=5.5.9",
+    "twig/extensions": "~1.0"
+	"incenteev/composer-parameter-handler": "~2.0",
+    "doctrine/doctrine-fixtures-bundle": "~2.3"
+	
+  },
+
+}
